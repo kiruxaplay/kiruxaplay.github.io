@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -144,6 +144,23 @@ $(function() {
   });
 });
 
+var modal = document.getElementById("my_modal");
+var btn = document.getElementById("btn_modal_window");
+var span = document.getElementsByClassName("close_modal_window")[0];
+
+btn.onclick = function () {
+   modal.style.display = "block";
+}
+
+span.onclick = function () {
+   modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+   if (event.target == modal) {
+       modal.style.display = "none";
+   }
+}
 </script>
 
 </body>
