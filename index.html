@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сайт</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Шапка сайта -->
+    <nav id="topnav">
+      <!-- Меню сайта -->
+      <a href="#">
+        <span class="logo"><img src="img/logo.png" alt="" width="60px"></span>
+      </a>
+      <ul class="menu">
+        <li><a href="index.html">Новости</a></li>
+        <li><a href="#">Товары</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
+    </nav>
+    <!-- Конец меню -->
+  </header>
+  <!-- Конец шапки -->
+  <div class="container">
+    <div>
+      <!--Блок раздела страницы с общей информацией -->
+      <h1 class="autoh1">Автомобиль</h1>
+      <div class="auto">Самодвижущееся транспортное средство с двигателем для перевозки грузов и пассажиров по безрельсовым путям.</div>
+    </div>
+    <!-- Конец блока -->
+    <div>
+      <div class="bookmark-list">
+        <span>Закладки:</span>
+      </div>
+      <article id="article_1">
+        <!-- Блок статьи 1 -->
+        <h2>Dodge Challenger</h2>
+        <a class="bookmark" href="#">Добавить в закладки</a>
+        <div>
+          <!-- Блок с исозбражением-->
+          <img alt="Dodge" src="https://pngimg.com/uploads/dodge/dodge_PNG42.png" class="image">
+        </div>
+        <!-- Конец блока с исозбражением-->
+        <p>Dodge Challenger — культовый автомобиль производства компании Dodge, принадлежащей концерну Chrysler Corporation. Был предназначен конкурировать с такими автомобилями, как Chevrolet Camaro, Ford Mustang, Mercury Cougar и Pontisac Firebird.
+        </p>
+        <button id="btn_modal_window">Подробнее</button>
+        <div id="my_modal" class="modal">
+          <div class="modal_content">
+            <span class="close_modal_window">×</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus voluptate modi officiis quibusdam accusamus repellendus, veritatis, animi magnam recusandae vero exercitationem dicta culpa, dolorem reiciendis deleniti enim autem aperiam consequuntur. Itaque quaerat, magni totam eius nesciunt perspiciatis suscipit, sequi! Corporis sit, tempora nostrum aspernatur tempore ea nobis maiores obcaecati voluptates, iste veniam ex, esse molestiae exercitationem possimus ipsam. Ipsum sit debitis blanditiis minus numquam recusandae velit doloremque dolore ex molestias alias temporibus eos excepturi natus provident quas et hic iusto beatae, maiores, odio voluptatem accusantium modi porro. Dolorem suscipit dignissimos voluptatum expedita magni nostrum eum veniam, rerum quibusdam cupiditate.</p>
+          </div>
+        </div>
+        <div class="date">20.02.2019</div>
+      </div>
+
+
+      </article>
+      <!-- Конец блока статьи -->
+      <article id="article_2">
+        <!-- Блок статьи 2 -->
+        <h2>Ford Mustang</h2>
+        <a class="bookmark" href="index.html">Добавить в закладки</a>
+        <div>
+          <!-- Блок с исозбражением-->
+          <img alt="" src="img/mustang.png" class="image">
+          <div>Ford Mustang — культовый автомобиль класса Pony Car производства Ford Motor Company.</div>
+        </div>
+        <br><br>
+        <!-- Конец блока с исозбражением-->
+        <img src="img/shelby.png" width="300px" alt="">
+        <p>
+          Изначальный вариант 11233 (1964/65—1973 гг.) был создан на базе агрегатов семейного седана Ford Falcon (создатель Ли Якокка и его команда). Первый серийный Mustang сошёл с конвейера 9 марта 1964 года как модель 1965 года (в среде
+          коллекционеров относительно Mustang выпуска до осени 1964 года употребляется неофициальное обозначение «модель 1964 1/2»). 17 апреля автомобиль был представлен публике в Нью-Йорке, а 19 апреля — показан по всем трём американским
+          телевещательным сетям. Продвижение автомобиля сопровождалось активной рекламной кампанией. Это была одна из самых удачных премьер в истории автомобилестроения.</p>
+        <div class="date">20.03.2019</div>
+      </article>
+      <!-- Конец блока статьи -->
+      <a href="#ModalOpen" class="butt" title="">Обратная связь</a>
+
+      <div id="ModalOpen" class="Window">
+        <div>
+          <a href="#close" title="Закрыть" class="close">X</a>
+          <form class="" action="#" method="post">
+            Укажите свой номер, мы вам перезвоним! <br>
+            <input class="numm" type="text" value="" placeholder="Введите номер телефона"> <br>
+            <button type="submit" id="submit" class="butt" disabled>Перезвоните мне</button><br>
+            <input type="checkbox" id="agree"><span>Я согласен на обработку персональных данных и ознакомлен с политикой конфидециальности</span>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Конец блока раздела статей-->
+
+
+  <!-- Подвал сайта -->
+
+
+
+
+  <footer>
+    <!-- Контейнер для блоков подвала -->
+    <div class="col-three">
+      <!-- Первая колонка подвала -->
+      <span>@Copyright 2020</span>
+    </div>
+    <!-- Конец колонки -->
+    <div class="col-three">
+      <!-- Вторая колонка подвала -->
+      <div>
+        <!-- Ссылки на социальные сети -->
+        <a title="" href="" target="_blank"><span>VK</span></a> |
+        <a title="" href="" target="_blank"><span>TELEGRAM</span></a>
+      </div>
+      <!-- Конец блока соц. сетей -->
+    </div>
+    <!-- Конец колонки -->
+    <div class="col-three">
+      <!-- Третья колонка подвала -->
+      <a href="mailto:kirill.mdr@gmail.com">Email</a>
+      <!-- Ссылка на email -->
+    </div>
+    <!-- Конец колонки -->
+  </footer>
+  <!-- Конец подвала -->
+
+
+<script type="text/javascript">
+$(function() {
+  $('#agree').on('change', function() {
+    if ($('#agree').prop('checked')) {
+      $('#submit').attr('disabled', false);
+    } else {
+      $('#submit').attr('disabled', true);
+    }
+  });
+});
+
+</script>
+
+</body>
+
+</html>

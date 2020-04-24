@@ -1,0 +1,324 @@
+/* Модальное окно 1 */
+#btn_modal_window{
+  border: 2px solid black;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 10px;
+  width: 150px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.feedback{
+  font-size: 20px;
+}
+/* --- */
+
+/* Модальное окно 2 */
+.Window {
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: rgba(0,0,0,0.7);
+ z-index: 99999;
+ display: none;
+ pointer-events: none;
+ text-align: center;
+}
+
+.Window:target {
+ display: block;
+ pointer-events: auto;
+}
+
+.Window > div {
+ width: 400px;
+ position: relative;
+ margin: 10% auto;
+ padding: 20px;
+ border-radius: 5px;
+ background: #f2f2f2;
+}
+
+.close {
+ background: #cc3300;
+ color: #FFFFFF;
+ line-height: 25px;
+ position: absolute;
+ right: -12px;
+ text-align: center;
+ top: -10px;
+ width: 24px;
+ text-decoration: none;
+ font-weight: bold;
+ border-radius: 12px;
+
+}
+form span {
+  font-size: 12px;
+  color: gray;
+}
+.numm{
+  width: 200px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.butt{
+  padding: 5px;
+  border: 2px solid black;
+  background-color: #43A047;
+  color: white;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+}
+.butt:hover{
+  background-color: #388E3C;
+}
+.butt[disabled]{
+  background-color: gray;
+}
+.butt[disabled]:hover{
+  background-color: gray;
+}
+
+/* --- */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.flex{
+  display: flex;
+}
+.flexitem{
+}
+
+article, figure, footer, header, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Шапка */
+header {
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  height: 70px;
+}
+
+/* Меню*/
+.logo {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#topnav {
+  border-bottom: 1px solid black;
+  height: 69px;
+  width: 100%;
+  position: fixed;
+  background-color: #e0e0e0;
+
+}
+
+
+.menu a {
+  text-transform: uppercase;
+  display: block;
+  padding: 25px;
+  float:  left;
+  color: black;
+  width: 90px;
+  text-align: center;
+
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: darkcyan;
+}
+
+/* Основное содержимое */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  background-color: #ffffff;
+  padding: 30px;
+  /* border: 1px solid black;
+  border-radius: 15px; */
+  box-shadow: 0 0 5px rgba(122,122,122,0.5);
+}
+
+/* Футер */
+footer {
+  background: #cfcfcf;
+  margin-top: 30px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.col-three {
+  width: 33.3333333333%;
+  float: left;
+  text-align: center;
+}
+
+
+p {
+  margin: 10px;
+}
+
+.date {
+  text-align: right;
+  margin: 10px;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+.auto {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #cfcfcf;
+}
+
+body {
+  background-image: url(img/back.png);
+  /* background-image: url(http://ilyakhasanov.ru/images/background/97.png); */
+}
+
+.image {
+  width: 70%;
+}
+
+img[src="img/shelby.png"] {
+  float: left;
+}
+.bookmark {
+color: #00AC6B;
+margin-left: 30px;
+}
+.added {
+color: #FF4F00;
+}
+.bookmark-list a {
+margin-right: 5px;
+}
+.bookmark-list{
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width:1024px) {
+  .container {
+    max-width: 90%;
+  }
+  .autoh1 {
+    margin-top: 20px;
+  }
+
+}
+@media (max-width:825px) {
+  nav {
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .menu {
+    display: block;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  img[src="img/shelby.png"] {
+    float: none;
+  }
+
+  .col-three {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    height: auto;
+  }
+
+
+
+}
+@media (max-width: 640px) {
+  .logo{
+    display: none;
+  }
+}
